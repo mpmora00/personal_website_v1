@@ -56,24 +56,44 @@ a {
   text-decoration: none;
 }
 
-footer {
-  text-align: right;
-  float: right;
-  position: fixed;
+/* Used to design the footer */
+#footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  height: 3%;
+  text-align: right;
+}
+
+li.footer {
+  display: inline;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
 }
 
 /* text syles */
 .titles {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Bebas Neue', cursive;
 }
 .nav {
-  font-size: 15px;
+  color: white;
+  font-size: 17px;
   font-family: 'Bebas Neue', cursive;
-  overflow: hidden;
-  display: inline-block;
+}
+.footer {
+  font-size: 15px;
+  color: #808080;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 40px;
 }
 .description {
   color: #808080;
@@ -81,6 +101,7 @@ footer {
   font-family: 'Bebas Neue', cursive;
 }
 
+/* used for the table of image links in the home page */
 table {
   margin-left:2%;
   margin-right:0%;
@@ -89,7 +110,6 @@ table {
   text-align: center;
 }
 
-/* used for the table of image links in the home page */
 .homeImages {
   position: relative;
 }
