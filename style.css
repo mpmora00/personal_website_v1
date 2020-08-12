@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
   background-color: #101010;
@@ -45,10 +45,24 @@ li a:hover:not(.active) {
   color: white;
 }
 
+/* heading formats */
 h1 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   color: white;
+  font-size: 35;
+}
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 20;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #C7C7C7;
+  font-size: 15;
 }
 
 a {
@@ -79,12 +93,12 @@ li.footer {
 }
 
 /* text syles */
-.titles {
+.titles { /* inside images home page */
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Bebas Neue', cursive;
 }
-.nav {
+.nav { /* navigation bad headings */
   color: white;
   font-size: 17px;
   font-family: 'Bebas Neue', cursive;
@@ -95,7 +109,7 @@ li.footer {
   font-family: 'Bebas Neue', cursive;
   line-height: 40px;
 }
-.description {
+.description { /* inside the images home page*/
   color: #808080;
   font-size: 13px;
   font-family: 'Bebas Neue', cursive;

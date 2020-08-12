@@ -6,6 +6,8 @@
 
     <!-- attach stylesheet -->
     <link rel="stylesheet" type="text/css" href="../style.css"></link>
+    <link rel="stylesheet" type="text/css" href="otherStyle.css"></link>
+
   </head>
 
   <header>
@@ -24,7 +26,33 @@
   <!-- The table of image links to other pages -->
   <body>
     <div id="page-container">
-      <div id="content-wrap">
+      <div id="content-wrap2">
+        <h2>Digital Artwork</h2>
+        <ol class="pages">
+          <li>Figma Project: https://www.figma.com/file/gPCWKB7oNjccaKdxmGBwae/cs-67?node-id=0%3A1<br>
+          Worked on this app for a 3 month class on Human-Computer Interaction with 4 teammates </li>
+          <p>&emsp;</p>
+          <li> A 3D digital model recreating an office using Maya Autodesk 2018 and rendering with Arnold. Inspired by my father's office and decided to add as many details as I could remember.</li>
+        </ol>
+
+        <div style="text-align: center;">
+          <div class="twoImages">
+            <img class="myImages" id="myImg" src="../images/digitalArt.png">
+            <img class="myImages" id="myImg" src="../images/digitalArt2.png">
+          </div>
+          <div class="twoImages">
+            <img class="myImages" id="myImg" src="../images/digitalArt3.png">
+            <img class="myImages" id="myImg" src="../images/digitalArt4.png">
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
       </div>
 
     <footer id="footer">
@@ -34,6 +62,38 @@
         <li class="footer"><a href="mailto:mpmora00@gmail.com"><img src="../images/mail.png" alt="Mail" style="width: 2%; height:80%;"></a></li>
       </ul>
     </footer>
-  </div>
-</body>
+    </div>
+
+    <!-- NOT MY CODE
+        Credit: https://www.w3schools.com/css/css3_images.asp
+        Edited to allow multiple images in same page -->
+    <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    </script>
+
+  </body>
 </html>
