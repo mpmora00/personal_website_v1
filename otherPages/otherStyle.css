@@ -6,15 +6,36 @@
   margin-right: 5%;
 }
 
+/* to align the table ot text under certain projects */
+table.text{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.text a {
+  color: #808080;
+  text-align: center;
+  padding: 14px 0px;
+  display: inline;
+  text-decoration: none;
+}
+table.text a:hover {
+  color: white;
+}
+
+/* image organization */
 .twoImages img { /* to display two images side by side */
    width: 49%;
    max-height: 100%;
    display: inline;
+   text-align: center;
 }
 .fourImages img { /* to display four images side by side */
-   width: 10%;
+   width: 19%;
    max-height: 50%;
    display: inline;
+   text-align: center;
 }
 
 /* for numbered bullets  */
@@ -39,7 +60,7 @@ ol.pages li::before {
 }
 
 
-/* NOT MY CODE
+/* Until the end this is NOT MY CODE
 Credit: https://www.w3schools.com/css/css3_images.asp */
 
 #myImg {
