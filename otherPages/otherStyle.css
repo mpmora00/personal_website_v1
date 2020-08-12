@@ -42,7 +42,7 @@ table.text a:hover {
 ol.pages li {
   font-family: 'Roboto', sans-serif;
   color: #C7C7C7;
-  font-size: 15;
+  font-size: 94%;
   counter-increment: li
 }
 
@@ -125,7 +125,7 @@ Credit: https://www.w3schools.com/css/css3_images.asp */
   top: 15px;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 250%;
   font-weight: bold;
   transition: 0.3s;
 }

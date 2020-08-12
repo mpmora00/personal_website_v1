@@ -12,7 +12,6 @@ header {
   top: 0;
   padding: 15px;
   text-align: center;
-  font-size: 15px;
   background-color: #101010;
   z-index: 1;
 }
@@ -50,19 +49,19 @@ h1 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   color: white;
-  font-size: 35;
+  font-size: 210%;
 }
 h2 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   color: white;
-  font-size: 20;
+  font-size: 125%;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   color: #C7C7C7;
-  font-size: 15;
+  font-size: 93%;
 }
 
 a {
@@ -95,23 +94,23 @@ li.footer {
 /* text syles */
 .titles { /* inside images home page */
   color: white;
-  font-size: 20px;
+  font-size: 125%;
   font-family: 'Bebas Neue', cursive;
 }
-.nav { /* navigation bad headings */
+.nav { /* navigation bar headings */
   color: white;
-  font-size: 17px;
+  font-size: 107%;
   font-family: 'Bebas Neue', cursive;
 }
 .footer {
-  font-size: 15px;
+  font-size: 94%;
   color: #808080;
   font-family: 'Bebas Neue', cursive;
   line-height: 40px;
 }
 .description { /* inside the images home page*/
   color: #808080;
-  font-size: 13px;
+  font-size: 82%;
   font-family: 'Bebas Neue', cursive;
 }
 
