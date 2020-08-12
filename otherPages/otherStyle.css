@@ -11,6 +11,11 @@
    max-height: 100%;
    display: inline;
 }
+.fourImages img { /* to display four images side by side */
+   width: 10%;
+   max-height: 50%;
+   display: inline;
+}
 
 /* for numbered bullets  */
 ol.pages li {
