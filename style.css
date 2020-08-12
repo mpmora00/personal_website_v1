@@ -1,12 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 body {
-  background-color: black;
+  background-color: #101010;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #101010;
+  z-index: 1;
+}
+
+/* used for navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: #808080;
+  text-align: center;
+  padding: 14px 16px;
+  display: inline;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  color: white;
+}
+.active {
+  color: white;
 }
 
 h1 {
   font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
   color: white;
-  font-size: 35px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: right;
+  float: right;
+  position: fixed;
+  width: 100%;
+}
+
+/* text syles */
+.titles {
+  color: white;
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+.nav {
+  font-size: 15px;
+  font-family: 'Bebas Neue', cursive;
+  overflow: hidden;
+  display: inline-block;
+}
+.description {
+  color: #808080;
+  font-size: 13px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+table {
+  margin-left:2%;
+  margin-right:0%;
+  border-collapse: separate;
+  border-spacing: 5px;
   text-align: center;
+}
+
+/* used for the table of image links in the home page */
+.homeImages {
+  position: relative;
+}
+
+.imgLink {
+  position: relative;
+  display: block;
+  opacity: 100%;
+  backface-visibility: hidden;
+  width: 100%;
+  display: block;
+}
+
+.linkText {
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.homeImages:hover .imgLink{
+  opacity: 20%;
+}
+.homeImages:hover .linkText {
+  visibility: visible;
 }
