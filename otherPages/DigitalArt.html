@@ -31,8 +31,8 @@
         <h2>Digital Artwork</h2>
 
         <ol class="pages">
-          <li> A 3D digital model recreating an office using Maya Autodesk 2018 and rendering with Arnold. I was inspired by my father's office and decided to add as many details as I could remember. <br><br>
-          &emsp; <span style="color: white;">- Duration:</span> 10 weeks. </li>
+          <div style="width:70%"><li> A 3D digital model recreating an office using Maya Autodesk 2018 and rendering with Arnold. I was inspired by my father's office and decided to add as many details as I could remember. <br><br>
+          &emsp; <span style="color: white;">- Duration:</span> 10 weeks. </li></div>
 
           <br><br>
 
@@ -54,7 +54,7 @@
           <!-- details of the figma project in a table style -->
           <table class="text">
             <tr>
-              <td style="padding:0 10px; text-align: right; width:auto;">
+              <td style="padding:0 10px; text-align: right; width:20%;">
                 <p><span style="color:white; font-weight:bolder;">Class</span><br><br>
                   COSC 067: Introduction to Human Computer-Interaction</p><br>
                 <p><span style="color:white; font-weight:bolder;">Duration</span><br><br>
@@ -63,7 +63,7 @@
                   Figma <br> Sketch <br> Illustrator</p>
               </td>
 
-              <td style="padding:0 10px; text-align: left; width:80%;">
+              <td style="padding:0 10px; text-align: left; width:60%;">
                 <p><span style="color:white; font-weight:bolder;">CONTEXT:</span></p>
                 <p>A majority of Dartmouth students have little access to cheap transportation to get off-campus. Because of this, students have a difficult time accesing certain locations like better supermarkets or farther away hiking paths.</p>
 
@@ -100,46 +100,18 @@
 
       </div>
 
-    <!-- The page footer with icons to contact me -->
-    <footer id="footer">
-      <div class="footer">Author: Maria Paula Mora</div>
-      <ul>
-        <li class="footer"><a href="https://www.linkedin.com/in/maria-paula-mora00/"><img src="../images/linkedin.png" alt="Linkedin" style="width:1.5%;"></a></li>
-        <li class="footer"><a href="mailto:mpmora00@gmail.com"><img src="../images/mail.png" alt="Mail" style="width: 2%; height:80%;"></a></li>
-      </ul>
-    </footer>
+      <!-- The page footer with icons to contact me -->
+      <footer id="footer">
+        <div class="footer">Author: Maria Paula Mora</div>
+        <ul>
+          <li class="footer"><a href="https://www.linkedin.com/in/maria-paula-mora00/"><img src="../images/linkedin.png" alt="Linkedin" style="width:1.5%;"></a></li>
+          <li class="footer"><a href="mailto:mpmora00@gmail.com"><img src="../images/mail.png" alt="Mail" style="width: 2%; height:80%;"></a></li>
+        </ul>
+      </footer>
     </div>
 
-    <!-- NOT MY CODE
-        Credit: https://www.w3schools.com/css/css3_images.asp
-        Edited to allow multiple images in same page -->
-    <script>
-        // create references to the modal...
-        var modal = document.getElementById('myModal');
-        // to all images -- note I'm using a class!
-        var images = document.getElementsByClassName('myImages');
-        // the image in the modal
-        var modalImg = document.getElementById("img01");
-        // and the caption in the modal
-        var captionText = document.getElementById("caption");
-
-        // Go through all of the images with our custom class
-        for (var i = 0; i < images.length; i++) {
-        var img = images[i];
-        // and attach our click listener for this image.
-        img.onclick = function(evt) {
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-        }
-        }
-
-        var span = document.getElementsByClassName("close")[0];
-
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-    </script>
+    <!-- attaching javascript file -->
+    <script type="text/javascript" src="script.js"></script>
 
   </body>
 </html>

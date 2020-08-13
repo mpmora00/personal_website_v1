@@ -8,7 +8,7 @@
 
 /* to align the table ot text under certain projects */
 table.text{
-  width:90%;
+  width:80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,6 +59,42 @@ ol.pages li::before {
   margin-left: -1em
 }
 
+/* To align a gallery of different sized images
+Idea obtained from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 49%;
+    max-width: 49%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 90%;
+    max-width: 90%;
+  }
+}
 
 /* Until the end this is NOT MY CODE
 Credit: https://www.w3schools.com/css/css3_images.asp */
@@ -100,6 +136,7 @@ Credit: https://www.w3schools.com/css/css3_images.asp */
   width: 80%;
   max-width: 700px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   color: #ccc;
   padding: 10px 0;
   height: 150px;
