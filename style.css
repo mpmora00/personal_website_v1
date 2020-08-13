@@ -78,6 +78,13 @@ a {
   text-align: right;
 }
 
+li p {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 220%;
+}
+
 li.footer {
   display: inline;
 }
