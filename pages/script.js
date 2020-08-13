@@ -2,6 +2,7 @@
 // Credit: https://www.w3schools.com/css/css3_images.asp
 // Edited to allow multiple images in same page
 
+
 // create references to the modal...
 var modal = document.getElementById('myModal');
 // to all images -- note I'm using a class!
