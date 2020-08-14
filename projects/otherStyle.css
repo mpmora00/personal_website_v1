@@ -6,6 +6,38 @@
   margin-right: 5%;
 }
 
+#box_container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#box {
+  border: 2px solid #808080;
+  width: 35%;
+  display: inline-block;
+  box-sizing:border-box;
+  height: 0;
+  padding-bottom: 35%;
+  position: relative;
+  margin: 20px 20px 20px 20px;
+}
+
+.content_box {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+
+.content_box i {
+  font-size: 500%;
+  color: white;
+}
+.content_box p {
+  font-size: 100%;
+  color: #808080;
+}
+
 /* to align the table ot text under certain projects */
 table.text{
   width:80%;
@@ -140,6 +172,84 @@ Idea obtained from https://www.w3schools.com/howto/howto_css_image_grid_responsi
     max-width: 90%;
   }
 }
+
+/* Most of this is from a website, but it was edited to fit my purposes
+Credit: https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-text {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+.modal-text p{
+  color: black;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-text h2 {
+  color: black;
+  width: 90%;
+  margin: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.button {
+    background-color: #808080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.content_box a {
+  display: none;
+}
+
+#box:hover a {
+  display: block;
+}
+
 
 /* Until the end this is NOT MY CODE
 Credit: https://www.w3schools.com/css/css3_images.asp */
