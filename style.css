@@ -10,10 +10,15 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: #101010;
   z-index: 1;
+}
+
+header h1{
+  padding: 0;
+  margin: 0;
 }
 
 /* used for drop down menu in navigation bar */
@@ -70,7 +75,6 @@ ul {
 
 li {
   display: inline;
-  font-size: 100%;
 }
 
 li a {
@@ -92,7 +96,7 @@ h1 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   color: white;
-  font-size: 210%;
+  font-size: 250%;
 }
 h2 {
   font-family: 'Bebas Neue', cursive;
@@ -149,7 +153,7 @@ li.footer {
 }
 .nav { /* navigation bar headings */
   color: white;
-  font-size: 107%;
+  font-size: 130%;
   font-family: 'Bebas Neue', cursive;
 }
 .footer {
@@ -160,14 +164,14 @@ li.footer {
 }
 .description { /* inside the images home page*/
   color: #808080;
-  font-size: 82%;
+  font-size: 100%;
   font-family: 'Bebas Neue', cursive;
 }
 
 /* used for the table of image links in the home page */
 table {
   margin-left:2%;
-  margin-right:0%;
+  margin-right:2%;
   border-collapse: separate;
   border-spacing: 5px;
   text-align: center;
