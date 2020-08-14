@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 
 body {
   background-color: #101010;
@@ -7,7 +9,7 @@ body {
   padding:0;
 }
 
-.wf-loading {
+.wf-loading * {
   visibility: hidden;
 }
 
@@ -24,7 +26,7 @@ header h1{
   padding: 0;
   margin: 0;
   margin-top: 2%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   letter-spacing: 2px;
   color: white;
   font-size: 250%;
@@ -32,7 +34,7 @@ header h1{
 
 /* used for drop down menu in navigation bar */
 .dropbtn {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   background-color: #101010;
   color: #808080;
   padding: 16px;
@@ -102,13 +104,13 @@ li a:hover:not(.active) {
 
 /* heading formats */
 h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   letter-spacing: 2px;
   color: white;
   font-size: 250%;
 }
 h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   letter-spacing: 2px;
   color: white;
   font-size: 140%;
@@ -135,7 +137,7 @@ a {
 }
 
 li p {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   letter-spacing: 2px;
   color: white;
   font-size: 220%;
@@ -158,23 +160,23 @@ li.footer {
 .titles { /* inside images home page */
   color: white;
   font-size: 125%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
 }
 .nav { /* navigation bar headings */
   color: white;
   font-size: 130%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
 }
 .footer {
   font-size: 94%;
   color: #808080;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
   line-height: 40px;
 }
 .description { /* inside the images home page*/
   color: #808080;
   font-size: 100%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Impact; /* fallback font */
 }
 
 /* used for the table of image links in the home page */
