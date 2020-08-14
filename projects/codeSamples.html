@@ -43,36 +43,42 @@
 
           <!-- tiny search engine -->
           <div id="box">
+            <img src="../images/Coding/search.png">
             <div class="content_box">
-              <i class="fab fa-searchengin"></i>
-              <p style="color:white;">Tiny Search Engine</p>
+              <h2>Tiny Search Engine</h2><br>
               <p>Language: C</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="tse-btn">Read more...</button>
 
             </div>
           </div>
 
           <!-- matrix library -->
           <div id="box">
+            <img src="../images/Coding/matrix.png">
             <div class="content_box">
-              <i class="fas fa-calculator"></i>
-              <p style="color:white;">Matrix Library</p>
+              <h2>Matrix Library</h2><br>
               <p>Language: C++</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="matrix-btn">Explain...</button>
 
             </div>
           </div>
 
           <!-- Sudoku solver -->
           <div id="box">
+            <img src="../images/Coding/sudoku.png">
             <div class="content_box">
-              <i class="fas fa-puzzle-piece"></i>
-              <p style="color:white;">Sudoku Solver</p>
+              <h2>Sudoku Solver</h2><br>
               <p>Language: C</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="sudoku-btn">What...?</button>
 
             </div>
           </div>
@@ -80,45 +86,139 @@
 
           <!-- point quad tree -->
           <div id="box">
+            <img src="../images/Coding/tree.png">
             <div class="content_box">
-              <i class="fas fa-gavel"></i>
-              <p style="color:white;">Point Quadtree</p>
+              <h2>Point Quadtree</h2><br>
               <p>Language: Java</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="tree-btn">Learn more...</button>
 
             </div>
           </div>
 
           <!-- sketch server -->
           <div id="box">
+            <img src="../images/Coding/sketch.png">
             <div class="content_box">
-              <i class="fas fa-edit"></i>
-              <p style="color:white;">Sketch Servers</p>
+              <h2>Sketch Servers</h2><br>
               <p>Language: Java</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="sketch-btn">Say more...</button>
 
             </div>
           </div>
 
           <!-- viterbi algorith -->
           <div id="box">
+            <img src="../images/Coding/tag.png">
             <div class="content_box">
-              <i class="fas fa-tags"></i>
-              <p style="color:white;">Viterbi Algorithm <br>(PoS tagging)</p>
+              <h2>Viterbi Algorithm <br>(PoS tagging)</h2><br>
               <p>Language: Java</p>
 
-              <br>
+              <br><br>
+
+              <button class="myBtn" id="tag-btn">Interesting...</button>
 
             </div>
           </div>
 
         </div>
 
-        <p style="text-align: center; font-size: 120%;"> To see more projects, feel free to send me an email! <br> I'd love to hear from you.</p>
+        <p style="text-align: center; font-size: 100%;"> To see more projects, feel free to send me an email! <br> I'd love to hear from you.</p>
 
       </div>
+
+      <!-- The Modal
+      Originally not my code, inspiration from https://www.w3schools.com/howto/howto_css_modals.asp-->
+      <div id="myModal" class="modal" style="display: none;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <br>
+          <h2 id="p_title">Title here</h2>
+          <br>
+          <p id="explanation">Some text in the Modal..</p>
+          <br>
+          <div style="text-align: right;"><a class="button" href="mailto:mpmora00@gmail.com">Request code</a></div>
+        </div>
+
+      </div>
+
+      <script>
+
+      // ORIGINALLY NOT MY CODE
+      // INSPIRATION FROM: https://www.w3schools.com/howto/howto_css_modals.asp
+      // edited to fit multiple modals instead of just one
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn1 = document.getElementById("tse-btn");
+      var btn2 = document.getElementById("matrix-btn");
+      var btn3 = document.getElementById("sudoku-btn");
+      var btn4 = document.getElementById("tree-btn");
+      var btn5 = document.getElementById("tag-btn");
+      var btn6 = document.getElementById("sketch-btn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn1.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Tiny Search Engine (TSE)';
+        document.getElementById('explanation').innerHTML = "Tiny Search Engine (TSE) is a command-line search program written in C that will take a valid seed URL and allows the user to search for specific words on that URL and all of it's subpages. It then returns a list of pages ranked with respect to frequency of occurrences which contain the relevant word (or words). Keywords like 'and', 'or' and 'not' are also functional when searching for specific word patterns. This program is capable of crawling webpages to acces subpages, parsing web content, and responding to user’s UI queries.";
+      }
+
+      btn2.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Matrix Library';
+        document.getElementById('explanation').innerHTML = 'blablablalabalbq';
+      }
+
+      btn3.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Sudoku Solver and Generator';
+        document.getElementById('explanation').innerHTML = 'what is this';
+      }
+
+      btn4.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Point Quadtree Algorithm';
+        document.getElementById('explanation').innerHTML = 'blablablalabalbq';
+      }
+
+      btn5.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Viterbi Algorithm (Part-of-Speech Tagging)';
+        document.getElementById('explanation').innerHTML = 'blablablalabalbq';
+      }
+
+      btn6.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('p_title').innerHTML = 'Sketching through servers';
+        document.getElementById('explanation').innerHTML = 'blablablalabalbq';
+      }
+
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
 
 
     <footer id="footer">

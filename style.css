@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
   background-color: #101010;
   margin-left: 2%;
   margin-right: 2%;
-  padding:0; 
+  padding:0;
+}
+
+.wf-loading {
+  visibility: hidden;
 }
 
 header {
@@ -21,6 +24,10 @@ header h1{
   padding: 0;
   margin: 0;
   margin-top: 2%;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 250%;
 }
 
 /* used for drop down menu in navigation bar */
