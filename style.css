@@ -294,7 +294,7 @@ a {
 
 /* Used to design the footer */
 #footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 3%;
@@ -314,10 +314,12 @@ li.footer {
 
 #page-container {
   position: relative;
+  height: auto;
 }
 
 #content-wrap {
   padding-bottom: 15px;    /* Footer height */
+  height: auto;
 }
 
 /* text syles */
