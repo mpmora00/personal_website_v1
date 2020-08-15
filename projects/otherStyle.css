@@ -3,6 +3,7 @@
   padding-bottom: 10px;    /* Footer height */
   margin-left: 5%;
   margin-right: 5%;
+  height: auto;
 }
 
 /* for the project image square */
@@ -332,7 +333,65 @@ button.myBtn {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 675px) {
+  #dd_boxes img {
+    width: 90%;
+  }
+  #dd_boxes4 img {
+    width: 49%;
+  }
 
+  #dd_left {
+    width: 90%;
+  }
+  #dd_right {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 675px) {
+  #dd_boxes img {
+    width: 48%;
+  }
+  #dd_boxes4 img {
+    width: 19%;
+  }
+  #dd_left {
+    width: 20%;
+  }
+  #dd_right {
+    width: 60%;
+  }
+}
+
+#dd_boxes, #dd_boxes4 {
+  display: inline;
+  box-sizing: border-box;
+  position: relative;
+  height:auto;
+  padding: 5px 0px 5px 5px;
+}
+
+#dd_left, #dd_right  {
+  display: inline-block;
+  /* box-sizing: border-box; */
+  position: relative;
+  height:auto;
+  padding: 0px 10px 0px 10px;
+}
+
+#dd_left {
+  text-align: right;
+}
+#dd_right {
+  text-align: left;
+}
+
+#dd_container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
 /* Until the end this is NOT MY CODE
 Credit: https://www.w3schools.com/css/css3_images.asp */
 
