@@ -216,6 +216,24 @@ body {
   {
     transform: none;
   }
+
+  #home_boxes {
+    width: 80%;
+  }
+
+  .linkText {
+    top: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 675px) {
+  #home_boxes {
+    width: 45%;
+  }
+  .linkText {
+    top: 30%;
+  }
 }
 
 /* used for navigation bar */
@@ -336,6 +354,21 @@ table {
   text-align: center;
 }
 
+#home_container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  transition: width 2s, height 4s;
+
+}
+
+#home_boxes {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  margin: 2px 2px 2px 2px;
+}
+
 .homeImages {
   position: relative;
 }
@@ -353,7 +386,6 @@ table {
   visibility: hidden;
   position: absolute;
   text-align: center;
-  top: 40%;
   margin-left: 10%;
   margin-right: 10%;
 }
