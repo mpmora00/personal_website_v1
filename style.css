@@ -6,31 +6,12 @@ body {
   background-color: #101010;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2%;
   padding:0;
 }
 
 .wf-loading * {
   visibility: hidden;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  padding-top: 10px;
-  text-align: center;
-  background-color: #101010;
-  z-index: 1;
-}
-
-header h1 {
-  display: inline;
-  margin: 0;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  font-family: 'Bebas Neue', Impact; /* fallback font */
-  letter-spacing: 2px;
-  color: white;
-  font-size: 250%;
 }
 
 /* used for drop down menu in navigation bar */
@@ -47,7 +28,7 @@ header h1 {
 .dropdown {
   position: relative;
   display: inline-block;
-  padding-top: 1%;
+  padding-top: 0%;
   padding-bottom: 2%;
   font-size: 100%;
 }
@@ -57,7 +38,7 @@ header h1 {
   position: absolute;
   background-color: #303030;
   min-width: 130px;
-  top: 80%;
+  top: 75%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -92,12 +73,11 @@ header h1 {
   /* NOT MY Code
   CSS-Only Hamburger Menu from: https://codepen.io/erikterwan/pen/EVzeRP */
 
-  #menuToggle
-  {
+  #menuToggle {
     display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    top: 35px;
+    left: 35px;
 
     z-index: 1;
 
@@ -156,8 +136,8 @@ header h1 {
     transform-origin: 4px 0px;
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
   }
 
   #menuToggle span:first-child
@@ -205,8 +185,8 @@ header h1 {
   #menu
   {
     position: absolute;
-    width: auto;
-    margin: -100px 0 0 -600px;
+    width: 150px;
+    margin: -100px 0 0 -100px;
     padding: 50px;
     padding-top: 125px;
 
@@ -216,7 +196,7 @@ header h1 {
     /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
-    transform: translate(-300%, 0);
+    transform: translate(-100%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
@@ -224,6 +204,7 @@ header h1 {
   #menu li
   {
     padding: 10px 0;
+    margin-left: 20%;
     display: block;
     font-size: 22px;
   }
@@ -254,7 +235,7 @@ li {
 li a {
   color: #808080;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 16px;
   display: inline;
   text-decoration: none;
 }
@@ -269,8 +250,11 @@ li a:hover:not(.active) {
 h1 {
   font-family: 'Bebas Neue', Impact; /* fallback font */
   letter-spacing: 2px;
+  margin-bottom: 1%;
+  margin-top: 0%;
   color: white;
   font-size: 250%;
+  text-align: center;
 }
 h2 {
   font-family: 'Bebas Neue', Impact; /* fallback font */
@@ -328,6 +312,7 @@ li.footer {
 .nav { /* navigation bar headings */
   color: white;
   font-size: 130%;
+  text-align: center;
   font-family: 'Bebas Neue', Impact; /* fallback font */
 }
 .footer {
