@@ -173,7 +173,7 @@ Idea obtained from https://www.w3schools.com/howto/howto_css_image_grid_responsi
   }
   .container img {
     float: none;
-    width: 60%;
+    width: 55%;
     margin: 0px 20px 20px 20px;
 
   }
@@ -186,7 +186,7 @@ Idea obtained from https://www.w3schools.com/howto/howto_css_image_grid_responsi
   }
   .container img {
     float: right;
-    width: 30%;
+    width: 25%;
     margin: 40px 20px 20px 20px;
   }
 }
