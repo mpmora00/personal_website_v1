@@ -1,4 +1,8 @@
 # Personal Website
+In 2020, I initiated this website as a means to self-educate in HTML and Web Development, resulting in its current state, which may not meet professional standards but met my goal back then. 
+
+**However, as of April 2024, with the progression of my skills and professional experience in full-stack development, I am currently upgrading this site to React.**
+
 ## Link
 www.mariamora.me
 
