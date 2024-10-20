@@ -4,7 +4,7 @@ In 2020, I initiated this website as a means to self-educate in HTML and Web Dev
 **However, as of April 2024, with the progression of my skills and professional experience in full-stack development, I am currently upgrading this site to React.**
 
 ## Link
-[www.mariamora.me](https://mpmora00.github.io/personal_website_v1/)
+[https://mpmora00.github.io/personal_website_v1/](https://mpmora00.github.io/personal_website_v1/)
 
 ### Languages
 HTML, CSS, and some Javascript for certain features
